@@ -6,6 +6,13 @@
 - Gabriela-Cătălina Grosu, 342C1
 - Iulia-Maria Dumitru, 341C3
 
+## Tests
+
+Before checking out the implementation, grab the test images for every stage from:
+
+- [Stage 1 test images](https://github.com/iuliadmtru/SM-proiect/tree/main/Etapa1/tests)
+- [Stage 2 test images](https://github.com/iuliadmtru/SM-proiect/tree/main/Etapa2/tests)
+
 ## Description
 
 The Gaussian blur feature is obtained by blurring (smoothing) an image using
