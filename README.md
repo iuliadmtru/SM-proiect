@@ -2,9 +2,9 @@
 
 ## Team
 
-- Maria Sfîrăială
-- Gabriela Grosu
-- Iulia Dumitru
+- Maria Sfîrăială, 341C3
+- Gabriela-Cătălina Grosu, 342C1
+- Iulia-Maria Dumitru, 341C3
 
 ## Description
 
