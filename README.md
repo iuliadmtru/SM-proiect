@@ -1,5 +1,7 @@
 # Gaussian blur
 
+GitHub repo: [https://github.com/iuliadmtru/SM-proiect](https://github.com/iuliadmtru/SM-proiect)
+
 ## Team
 
 - Maria Sfîrăială, 341C3
