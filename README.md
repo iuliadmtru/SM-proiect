@@ -13,6 +13,16 @@ Before checking out the implementation, grab the test images for every stage fro
 - [Stage 1 test images](https://github.com/iuliadmtru/SM-proiect/tree/main/Etapa1/tests)
 - [Stage 2 test images](https://github.com/iuliadmtru/SM-proiect/tree/main/Etapa2/tests)
 
+Command we used for running and time measuring:
+
+```
+./get_time_local.sh <num_threads_start> <num_threads_increment> <num_threads_stop>
+```
+
+For example, to run and measure the time for the OpenMP implementation for 2, 4,
+8, 16 and 32 threads, go to `Etapa1/omp` and run `./get_time_local.sh 2 2 32`.
+
+
 ## Description
 
 The Gaussian blur feature is obtained by blurring (smoothing) an image using
