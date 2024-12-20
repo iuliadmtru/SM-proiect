@@ -21,7 +21,7 @@ that we paralelized using OpenMP, MPI and a hybrid approach with both OpenMP and
 ### OpenMP
 
 The Gaussian Blur algorithm was parallelized using OpenMP to reduce execution time. 
-The three most time-consuming functions, box_blur_h, box_blur_t, and copy_image, 
+The three most time-consuming functions, `box_blur_h()`, `box_blur_t()`, and `copy_image()`, 
 were parallelized using OpenMP directives. 
 
 Parallelization is achieved by dividing the workload into equal chunks, 
@@ -48,6 +48,16 @@ is originally bigger than the final blurred slice. This is handled by calculatin
 when scattering and when gathering.
 
 ### Pthreads
+
+Similarly to the OpenMP implementation, we got a speedrun by improving the `box_blur_h()`, `box_blur_t()`, and `copy_image()` functions using the simple `for` parallelization method.
+We divide the loop between threads based on individual indeces with a formula dependant on the thread id, the total number of threads and the number of loops:
+
+```C
+int start = args->thread_id * (double)args->h / args->num_threads;
+int end = MIN((args->thread_id + 1) * (double)args->h / args->num_threads, args->h);C
+```
+
+As such, no other synchronization primitive is needed, because each thread has exclusive access on a distinct portion of the image.
 
 ### Hybrid: MPI + OpenMP
 
